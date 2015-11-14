@@ -490,20 +490,21 @@
         <h2>Contact Form</h2>
 
         <div class="content">
-          <form role="form">
+          <form method="post" role="form" action="https://getsimpleform.com/messages?form_api_token=8ceabc5e904725d141010e301c4fc2f7">
             <div class="form-group">
-              <label for="exampleInputName"><i class="icon-tag"></i></label>
-              <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+            <input type='hidden' name='redirect_to' value='http://santory.co/#top' />
+              <label for="InputName"><i class="icon-tag"></i></label>
+              <input type="text" class="form-control" name="Name" id="InputName" placeholder="Full Name" required>
               <div class="clearfix"></div>
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+              <label for="InputEmail1"><i class="icon-inbox"></i></label>
+              <input type="email" name="Email" class="form-control" id="InputEmail1" placeholder="Enter email" required>
               <div class="clearfix"></div>
             </div>
             <div class="form-group textarea">
-              <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
-              <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+              <label for="InputMessage"><i class="icon-pencil"></i></label>
+              <textarea rows="6" name="Message" class="form-control" id="InputMessage" placeholder="Write Message" required></textarea>
               <div class="clearfix"></div>
             </div>
 
